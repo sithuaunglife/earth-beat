@@ -1,22 +1,25 @@
-# Earth Sound Map — Starter Project
+# Earth Beat
 
-Open index.html in a browser, click Start sound, and try the signal modes. Browser autoplay policy requires a user click before audio can begin.
+Earth Beat is an Earth Information Jukebox: a bilingual demo that pairs an Earth visual frame with a real-time sonification interface. The current workspace is a design prototype; the target product is specified in [PROJECT.md](PROJECT.md) as three independent repositories.
 
-## Prototype summary
+## Run the demo
 
-- Demonstrates the NASA Space Apps 2026 challenge core: pairing Earth Information Center visual frames with real-time dynamic sonification.
-- Uses a simulated Earth signal so the demo works without an external API.
-- Maps signal values to pitch, visual color, and a live waveform.
-- Includes a 5-hour solo build plan and a short submission story.
+```sh
+pnpm install
+pnpm dev
+```
 
-## Recommended next step
+Open the local URL printed by Next.js. Choose Temperature, Ocean, or Forest, then start playback to hear the signal mapped to changing pitch and pulse.
 
-Replace the simulated signal in index.html with a NASA EIC frame or project-specific Earth dataset. Keep the mapping explanation visible so judges can understand how the data becomes sound.
+The current readings and waveform are generated demo data, not live NASA observations. Audio begins only after an explicit user action. The Earth image is NASA Blue Marble imagery.
 
-## Demo script
+## Project structure
 
-1. “This interface turns Earth data trends into sound.”
-2. “Higher values raise the pitch, while faster changes create a faster pulse.”
-3. “This makes the data story more accessible by combining visual and audio channels.”
+- `src/app`: current demo shell and route
+- `.github/skills/burmese-i18n`: workspace-local Burmese localization and typography guidance
+- `.github/skills/project-publisher`: workspace-local multi-repository creation and publishing workflow
+- `PROJECT.md`: product scope, target stack, repository layout, and publishing requirements
 
-Official challenge: https://www.spaceappschallenge.org/2026/challenges/the-earth-information-jukebox/
+## License
+
+The license for this prototype is to be selected before public release. Each future project repository and the root superproject must include its own appropriate license and README.
