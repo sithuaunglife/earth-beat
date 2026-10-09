@@ -29,7 +29,7 @@ const signals: Record<
     unit: "°C anomaly",
   },
   ocean: { color: "#277f88", frequency: 164, level: 0.72, unit: "m sea level" },
-  forest: { color: "#688b50", frequency: 196, level: 84, unit: "% canopy" },
+  forest: { color: "#688b50", frequency: 196, level: 0.84, unit: "% canopy" },
 };
 
 const copy = {
@@ -134,7 +134,7 @@ const signalNames: Record<SignalKey, keyof typeof copy.en> = {
 const observationNames: Record<SignalKey, keyof typeof copy.en> = {
   temperature: "anomaly",
   ocean: "ocean",
-  forest: "forestShort",
+  forest: "forest",
 };
 
 function makeWave(phase: number, signal: SignalKey) {

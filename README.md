@@ -1,25 +1,36 @@
-# Earth Beat
+# Earth Beat — Earth Information Jukebox
 
-Earth Beat is an Earth Information Jukebox: a bilingual demo that pairs an Earth visual frame with a real-time sonification interface. The current workspace is a design prototype; the target product is specified in [PROJECT.md](PROJECT.md) as three independent repositories.
+Earth Beat is an English-only interactive demo for NASA Space Apps' The Earth Information Jukebox challenge.
 
-## Run the demo
+## Run it
 
-```sh
-pnpm install
-pnpm dev
-```
+Open index.html in a modern browser. Click Start listening to enable Web Audio. No build step or external API is required.
 
-Open the local URL printed by Next.js. Choose Temperature, Ocean, or Forest, then start playback to hear the signal mapped to changing pitch and pulse.
+## What is included
 
-The current readings and waveform are generated demo data, not live NASA observations. Audio begins only after an explicit user action. The Earth image is NASA Blue Marble imagery.
+- Production-style Earth Beat visual identity and responsive layout.
+- Four directly clickable sound scenes: Temperature, Rainfall, Vegetation, and Ocean.
+- Figma-inspired pixel-art Earth mascot and deep-space nebula backdrop.
+- Animated Earth-inspired visual stage and live signal canvas.
+- Web Audio sonification for every scene.
+- Each scene has its own pitch range, waveform behavior, color, and data mapping.
+- Temperature uses a tonal voice, rainfall uses pulsing filtered noise, vegetation uses harmonic shimmer, and ocean uses a low swell plus noise.
+- Accessible controls for scene selection, start/stop, mute, volume, reset, and keyboard navigation.
+- Separate Stop listening and Mute controls plus an animated activity wave that pauses when stopped or muted.
+- Stop fully clears the timer, disconnects/stops audio nodes, and closes the AudioContext so no background sound continues.
+- Figma assets are stored locally as earth-pixel.png and space-nebula.png; no temporary Figma asset URLs are used.
+- Explicit NASA EIC, demo-data, and challenge-alignment labeling.
 
-## Project structure
+## Important demo note
 
-- `src/app`: current demo shell and route
-- `.github/skills/burmese-i18n`: workspace-local Burmese localization and typography guidance
-- `.github/skills/project-publisher`: workspace-local multi-repository creation and publishing workflow
-- `PROJECT.md`: product scope, target stack, repository layout, and publishing requirements
+The current signal is simulated so the experience is dependable during judging. Replace the signal function and visual frame with a verified NASA EIC dataset when the API/data layer is ready.
 
-## License
+## Recommended demo flow
 
-The license for this prototype is to be selected before public release. Each future project repository and the root superproject must include its own appropriate license and README.
+1. Click Temperature, then Start listening.
+2. Click Rainfall, Vegetation, and Ocean to hear the sound change immediately.
+3. Point out the live pitch, value, waveform, and color change.
+4. Explain the mapping card for the selected Earth system.
+5. Open the challenge brief link for source alignment.
+
+Official challenge: https://www.spaceappschallenge.org/2026/challenges/the-earth-information-jukebox/
