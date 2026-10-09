@@ -1,30 +1,22 @@
-This is an opinionated [Next.js starter kit](https://nextjs.org) originally bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app) and extended with pnpm and shadcn/ui presets for a faster, consistent development experience.
+# Earth Sound Map — Starter Project
 
-## Getting Started
+Open index.html in a browser, click Start sound, and try the signal modes. Browser autoplay policy requires a user click before audio can begin.
 
-First, run the development server:
+## Prototype summary
 
-```bash
-pnpm dev
-```
+- Demonstrates the NASA Space Apps 2026 challenge core: pairing Earth Information Center visual frames with real-time dynamic sonification.
+- Uses a simulated Earth signal so the demo works without an external API.
+- Maps signal values to pitch, visual color, and a live waveform.
+- Includes a 5-hour solo build plan and a short submission story.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Recommended next step
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Replace the simulated signal in index.html with a NASA EIC frame or project-specific Earth dataset. Keep the mapping explanation visible so judges can understand how the data becomes sound.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Roboto](https://fonts.google.com/specimen/Roboto), for consistent, high-performance typography.
+## Demo script
 
-## Learn More
+1. “This interface turns Earth data trends into sound.”
+2. “Higher values raise the pitch, while faster changes create a faster pulse.”
+3. “This makes the data story more accessible by combining visual and audio channels.”
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Official challenge: https://www.spaceappschallenge.org/2026/challenges/the-earth-information-jukebox/
